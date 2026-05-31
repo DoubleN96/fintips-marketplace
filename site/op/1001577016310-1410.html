@@ -1,0 +1,72 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Obra Nueva en Villaverde Alto, Madrid · Fintips</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><style>
+:root{--primary:#2563EB;--primary-dark:#1E3A8A;--ink:#0F172A;
+--navy:#0B1B3B;--slate:#475569;--mist:#F1F5F9;--surface:#FFFFFF;
+--yield:#16A34A;--gold:#FACC15;--border:#E2E8F0;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--mist);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.display{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-0.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav img{height:34px}
+.nav .cta{background:var(--primary);color:#fff;padding:10px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 14px rgba(37,99,235,.25)}
+.nav .cta:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(37,99,235,.35)}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy),var(--primary-dark) 60%,var(--primary));color:#fff;padding:84px 0 120px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(900px 400px at 80% -10%,rgba(147,197,253,.25),transparent);pointer-events:none}
+.hero h1{font-size:clamp(2.4rem,1rem+5vw,4.2rem);font-weight:700;line-height:1.04;max-width:15ch}
+.hero p{margin-top:20px;font-size:clamp(1.05rem,.9rem+.5vw,1.3rem);color:#C7D2FE;max-width:50ch}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px 22px;backdrop-filter:blur(6px)}
+.stat b{display:block;font-family:'Space Grotesk';font-size:1.9rem;font-weight:700;line-height:1}
+.stat span{font-size:.82rem;color:#C7D2FE;text-transform:uppercase;letter-spacing:.06em}
+/* grid section */
+.section{margin-top:-72px;padding-bottom:90px;position:relative;z-index:2}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:#fff;border:1px solid var(--border);color:var(--slate);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;transition:.15s}
+.chip:hover{border-color:var(--primary);color:var(--primary)}
+.chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--border);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,23,42,.10)}
+.card .top{padding:22px 22px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.ybadge{background:rgba(22,163,74,.10);color:var(--yield);font-weight:700;font-size:13px;padding:6px 11px;border-radius:999px;white-space:nowrap}
+.ptype{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--slate);font-weight:700}
+.card h3{padding:12px 22px 0;font-size:1.12rem;line-height:1.25}
+.card .price{padding:14px 22px 0;font-family:'Space Grotesk';font-size:1.7rem;font-weight:700;color:var(--ink)}
+.meta{padding:10px 22px 0;display:flex;gap:14px;color:var(--slate);font-size:13px;flex-wrap:wrap}
+.card .desc{padding:12px 22px 0;color:var(--slate);font-size:14px;flex:1}
+.card .foot{padding:16px 22px 20px;margin-top:12px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--mist)}
+.src{font-size:11.5px;color:#94A3B8}
+.go{color:var(--primary);font-weight:700;font-size:14px}
+/* detail */
+.detail{background:#fff;border:1px solid var(--border);border-radius:24px;padding:40px;margin-top:34px}
+.detail .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin:28px 0}
+.kpi{background:var(--mist);border-radius:14px;padding:16px}
+.kpi span{font-size:12px;color:var(--slate);text-transform:uppercase;letter-spacing:.05em}
+.kpi b{display:block;font-family:'Space Grotesk';font-size:1.5rem;margin-top:4px}
+.btn{display:inline-block;background:var(--primary);color:#fff;padding:13px 24px;border-radius:12px;font-weight:600;transition:.15s}
+.btn:hover{background:var(--primary-dark)}
+.btn.ghost{background:#fff;color:var(--primary);border:1.5px solid var(--primary)}
+footer{background:var(--navy);color:#C7D2FE;padding:48px 0;margin-top:40px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
+footer b{color:#fff}
+@media(max-width:560px){.detail{padding:24px}}
+</style></head>
+<body><nav class="nav"><div class="wrap"><a href="/index.html"><img src="/logo.svg" alt="Fintips"></a><a class="cta" href="#oportunidades">Ver oportunidades</a></div></nav>
+<section class="wrap" style="padding-bottom:40px"><div class="detail">
+<a href="/index.html" style="color:var(--slate);font-size:14px">← Volver al marketplace</a>
+<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-top:14px;flex-wrap:wrap">
+<h1 style="font-size:clamp(1.6rem,1rem+2vw,2.4rem);max-width:20ch">Obra Nueva en Villaverde Alto, Madrid</h1>
+<span class="ybadge" style="font-size:15px;padding:9px 15px">▲ 5.83% rentabilidad</span></div>
+<div class="kpis"><div class="kpi"><span>Precio</span><b>239.470 €</b></div><div class="kpi"><span>Rentabilidad</span><b>5.83%</b></div><div class="kpi"><span>Superficie</span><b>66 m²</b></div><div class="kpi"><span>Habitaciones</span><b>3</b></div><div class="kpi"><span>Ubicación</span><b>Madrid</b></div><div class="kpi"><span>Tipo</span><b>Piso</b></div></div>
+<p style="color:var(--slate);font-size:1.05rem;max-width:60ch">Piso de obra nueva a estrenar con 3 habitaciones y 2 baños en Villaverde Alto. Rentabilidad neta hasta 5.83% con cash flow neto anual de hasta 13.960€.</p>
+<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn" href="/pdf/1001577016310-1410.pdf">⬇ Descargar dossier PDF</a><a class="btn ghost" href="https://t.me/c/1577016310/1410" target="_blank" rel="noopener">Ver fuente original</a></div>
+<p style="margin-top:24px;font-size:12.5px;color:#94A3B8">Fuente: Te ayudamos a construir una vida con tiempo y libertad. Inversión inmobiliaria con criterio. Rentabilidades por encima d · Fecha: 2026-05-21 · Datos agregados con fines informativos. Verifica siempre con el anunciante.</p>
+</div></section><footer><div class="wrap"><div><b>Fintips</b> · Oportunidades inmobiliarias con criterio<br>Marketplace de inversión inmobiliaria · datos agregados de fuentes públicas</div><div>Desarrollado por <b>Stratoma AI</b> · +34 611 03 19 47</div></div></footer></body></html>
